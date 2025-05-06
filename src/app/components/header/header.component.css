@@ -11,3 +11,19 @@ p {
 	outline: none;
 	box-shadow: none;
 }
+.navbar-fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1050;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-toggler-icon {
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath fill="none" stroke="%23333" stroke-width="2" d="M2 7 L28 7 M2 15 L28 15 M2 23 L28 23"/%3E%3C/svg%3E');
+}
+
+.navbar-toggler-icon.change {
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath fill="none" stroke="%23333" stroke-width="2" d="M2 2 L28 28 M2 28 L28 2"/%3E%3C/svg%3E');
+}
