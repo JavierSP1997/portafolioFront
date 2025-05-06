@@ -1,0 +1,46 @@
+section {
+	background-image: url(assets/images/fondo.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.text {
+	height: 150px;
+}
+
+img {
+	margin-top: 40px;
+	width: 200px;
+	height: auto;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 1.5rem;
+}
+
+.line.blink::after {
+	content: "|";
+	animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
