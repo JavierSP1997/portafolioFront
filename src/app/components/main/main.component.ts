@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 import { SobreMiComponent } from "../sobre-mi/sobre-mi.component";
+import { ProyectosComponent } from "../proyectos/proyectos.component";
 
 @Component({
 	selector: "app-hero",
 	standalone: true,
-	imports: [SobreMiComponent],
+	imports: [SobreMiComponent, ProyectosComponent],
 	templateUrl: "./main.component.html",
 	styleUrls: ["./main.component.css"],
 })
