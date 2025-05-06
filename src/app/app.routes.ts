@@ -1,8 +1,8 @@
 import type { Routes } from "@angular/router";
-import { HeroComponent } from "./components/hero/hero.component";
+import { MainComponent } from "./components/main/main.component";
 
 export const routes: Routes = [
 	{ path: "", redirectTo: "/inicio", pathMatch: "full" },
-	{ path: "inicio", component: HeroComponent },
+	{ path: "inicio", component: MainComponent },
 	{ path: "**", redirectTo: "/inicio" },
 ];
