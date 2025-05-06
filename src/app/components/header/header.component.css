@@ -1,17 +1,13 @@
-.logo {
-	cursor: pointer;
-	padding-top: 20px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
 img {
 	width: 40px;
 	border-radius: 20px;
 }
 
 p {
-	padding-top: 15px;
 	font-weight: bold;
+}
+.navbar-toggler {
+	border: none;
+	outline: none;
+	box-shadow: none;
 }
