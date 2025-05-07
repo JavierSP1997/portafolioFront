@@ -13,53 +13,8 @@
     
 <h3 class="text-center skills">Mis habilidades</h3>
 <div class="grid text-center">
-    <figure>
-        <img src="">
-        <figcaption>HTML</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>CSS</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>JAVASCRIPT</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>TYPESCRIPT</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>ANGULAR</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>NODE</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>MYSQL</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>MYSQL WORKBENCH</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>MONGO DB</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>GIT</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>SOURCETREE</figcaption>
-    </figure>
-    <figure>
-        <img src="">
-        <figcaption>HYPER</figcaption>
-    </figure>
+    @for (skill of skills; track $index) {
+        <p>{{skill.name}}</p>
+    }
 </div>
 </div>
