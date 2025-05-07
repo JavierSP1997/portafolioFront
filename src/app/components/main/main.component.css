@@ -1,12 +1,38 @@
+/* Fondo con gradiente animado, de más claro a más oscuro */
 section {
-	background-image: url("../../../assets/images/fondoPortfolio.png");
+	background: linear-gradient(
+		45deg,
+		rgba(23, 36, 51, 0.3) /* Color más claro */,
+		rgb(2, 7, 12) /* Color más oscuro */
+	);
+	animation: gradientMove 8s ease-in-out infinite; /* Acelera el cambio */
+	background-size: 300% 300%; /* Aumenta el tamaño del fondo para un cambio más notable */
+	height: 100vh; /* Ajusta según el tamaño de la sección */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white; /* Para contrastar con el fondo */
 }
+
+/* Animación suave para mover el gradiente */
+@keyframes gradientMove {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
 .hero {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 100vh;
 	text-align: center;
 }
 
