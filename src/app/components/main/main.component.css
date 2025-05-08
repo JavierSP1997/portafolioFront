@@ -39,12 +39,12 @@ button {
 	padding: 20px;
 	background-color: rgb(113, 213, 243);
 	color: 062038;
-	border: 1px solid #062038;
+	border: 1px solid #03172a;
 	transition: 0.5s;
 }
 
 button:hover {
-	background-color: #062038;
+	background-color: #03172a;
 	border: 1px solid white;
 	color: white;
 	transition: 0.5s;
