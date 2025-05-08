@@ -1,7 +1,11 @@
 <section id="proyectos">
-<h2>Mis projectos</h2>
+<h2 class="text-center">Mis projectos</h2>
 @for (project of projects; track $index) {
     <h4>{{project.title}}</h4>
+    @if (project.title === "Hamburgueseria Rovers") {
+        <img src="" alt="">
+    }
+    
     <p>{{project.description}}</p>
 }
 </section>

@@ -1,5 +1,5 @@
 #inicio {
-	background: linear-gradient(135deg, #1e3c72, #2a5298);
+	background-color: #062038;
 	padding: 100px 0;
 	color: white;
 	position: relative;
@@ -16,9 +16,13 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+h2 {
+	color: rgb(113, 213, 243);
+}
+strong {
+	color: rgb(113, 213, 243);
+}
 .text h1 {
-	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
@@ -26,21 +30,24 @@
 p {
 	margin-top: 20px;
 	font-size: 1.2rem;
+	color: lightgray;
 }
 
 button {
 	margin-top: 50px;
 	border-radius: 20px;
 	padding: 20px;
-	background-color: rgb(114, 95, 238);
-	color: white;
-	border: none;
-	font-weight: bold;
-	transition: background-color 0.3s ease;
+	background-color: rgb(113, 213, 243);
+	color: 062038;
+	border: 1px solid #062038;
+	transition: 0.5s;
 }
 
 button:hover {
-	background-color: #7a4ec7;
+	background-color: #062038;
+	border: 1px solid white;
+	color: white;
+	transition: 0.5s;
 }
 .social-links {
 	border-radius: 5px;

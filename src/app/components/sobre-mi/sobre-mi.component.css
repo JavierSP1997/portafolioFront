@@ -1,10 +1,19 @@
-.container {
-	margin-top: 50px;
+#sobre-mi {
+	background-color: #0a2d4a;
+	color: white;
+}
+.section {
+	padding-top: 50px;
+	padding-left: 12%;
+	padding-right: 12%;
+	padding-bottom: 50px;
+	min-height: 600px;
 }
 .contenedores {
 	gap: 50px;
 }
 h3 {
+	font-weight: bold;
 	margin-top: 60px;
 	text-align: center;
 	margin-bottom: 15px;
