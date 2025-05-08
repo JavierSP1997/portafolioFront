@@ -8,7 +8,7 @@ import { environment } from "../../environments/environment";
 	providedIn: "root",
 })
 export class ProjectsService {
-	private apiUrl = environment.apiUrl;
+	private apiUrl = `${environment.apiUrl}/projects`;
 	private httpClient = inject(HttpClient);
 
 	obtenerProyectos(): Promise<Project[]> {

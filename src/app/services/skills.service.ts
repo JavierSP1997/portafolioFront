@@ -8,7 +8,7 @@ import { environment } from "../../environments/environment";
 	providedIn: "root",
 })
 export class SkillsService {
-	private apiUrl = environment.apiUrl;
+	private apiUrl = `${environment.apiUrl}/skills`;
 	private httpClient = inject(HttpClient);
 
 	obtenerSkills(): Promise<Skill[]> {
