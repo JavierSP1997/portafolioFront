@@ -3,3 +3,21 @@
 h1 {
 	font-family: "Noto Sans", sans-serif;
 }
+
+h2 {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h3,
+h4,
+figcaption {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+p,
+a,
+button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

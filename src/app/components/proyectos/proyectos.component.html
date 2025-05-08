@@ -7,7 +7,7 @@
         @for (project of projects; track $index) {
           <figure class="card-proyecto">
             
-            @if (project.title === 'Hamburgueseria Rovers') {
+            @if (project.title === 'Hamburguesería Rovers') {
               <img src="../../../assets/images/desktop.png" alt="Hamburguesería Rovers" />
             }
             @if (project.title === 'Blog de Viajes') {
@@ -22,8 +22,11 @@
             @if (project.title === 'Portfolio Personal') {
               <img src="../../../assets/images/portfolio.png" alt="Portfolio Personal" />
             }
-            <figcaption>{{ project.title }}<p>{{ project.description }}</p></figcaption>
-            <a href="{{ project.url }}" target="_blank">Github</a>
+            <figcaption class="titulo"><h4>{{ project.title }}</h4><p>{{ project.description }}</p></figcaption>
+            <div class="boton-contenedor">
+              
+            </div>
+            <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>
         </figure>
         }
       </div>
