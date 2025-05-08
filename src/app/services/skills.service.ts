@@ -2,12 +2,13 @@ import { HttpClient } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
 import type { Skill } from "../interfaces/skills.interface";
 import { lastValueFrom } from "rxjs";
+import { environment } from "../../environments/environment";
 
 @Injectable({
 	providedIn: "root",
 })
 export class SkillsService {
-	private apiUrl = "http://localhost:3000/api/skills";
+	private apiUrl = environment.apiUrl;
 	private httpClient = inject(HttpClient);
 
 	obtenerSkills(): Promise<Skill[]> {
