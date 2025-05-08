@@ -4,8 +4,7 @@
 }
 .section {
 	padding-top: 50px;
-	padding-left: 12%;
-	padding-right: 12%;
+
 	padding-bottom: 50px;
 }
 .contenedores {
@@ -25,12 +24,13 @@ h3 {
 	flex-wrap: wrap;
 	p {
 		margin-right: 20px;
-		background-color: #ede9e9;
+		background-color: #062038;
 		padding: 8px 12px;
 		border-radius: 8px;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 		cursor: pointer;
+		color: white;
 	}
 
 	p:hover {
@@ -38,13 +38,15 @@ h3 {
 		transition: 0.3s;
 	}
 }
-
-@media (min-width: 768px) {
-	.contenedores {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	h3 {
-		margin-top: 25px;
+.experiencia,
+.proyectos,
+.educacion {
+	margin-top: 30px;
+	background-color: #062038;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	i {
+		color: rgb(113, 213, 243);
 	}
 }

@@ -1,25 +1,50 @@
 <div class="section" id="sobre-mi">
+  <div class="container">
     <h2 class="text-center mb-4">Sobre mí</h2>
     <p class="text-center">
       Soy una persona curiosa, comprometida y con una fuerte orientación al aprendizaje continuo.  
       Tras descubrir mi pasión por el <strong>desarrollo web</strong>, decidí dar un giro a mi carrera y formarme como <strong>desarrollador Full Stack</strong>.
     </p>
-<div class="contenedores">
+    
+    <div class="contenedores">
       <div class="izquierda">
-    <h3>Conóceme</h3>
-    <p>
-      Completé un bootcamp intensivo donde adquirí experiencia construyendo aplicaciones web desde cero, tanto en el <strong>frontend</strong> como en el <strong>backend</strong>. Durante este proceso, trabajé con tecnologías como <strong>HTML, CSS, JavaScript, Angular, Node.js, MySQL</strong> y <strong>MongoDB</strong>, aplicando <strong>metodologías ágiles</strong> y colaborando en equipo en entornos similares a los profesionales reales.
-    </p>
-    <p>
-      Esta etapa ha sido un auténtico punto de inflexión a nivel personal y profesional. Me ha permitido descubrir lo mucho que disfruto enfrentándome a retos técnicos, creando soluciones funcionales y aprendiendo cada día algo nuevo.
-    </p>
+        <h3>Conóceme</h3>
+        <p>
+          Completé un bootcamp intensivo donde adquirí experiencia construyendo aplicaciones web desde cero, tanto en el <strong>frontend</strong> como en el <strong>backend</strong>. Durante este proceso, trabajé con tecnologías como <strong>HTML, CSS, JavaScript, Angular, Node.js, MySQL</strong> y <strong>MongoDB</strong>, aplicando <strong>metodologías ágiles</strong> y colaborando en equipo en entornos similares a los profesionales reales.
+        </p>
+        <p>
+          Esta etapa ha sido un auténtico punto de inflexión a nivel personal y profesional. Me ha permitido descubrir lo mucho que disfruto enfrentándome a retos técnicos, creando soluciones funcionales y aprendiendo cada día algo nuevo.
+        </p>
+      </div>
+      <div class="experiencia">
+        <i class="fas fa-briefcase"></i>
+        <h5>Experiencia</h5>
+        <p>Recursos Humanos</p>
+      </div>
+      <div class="proyectos">
+        <i class="fas fa-code"></i>
+        <h5>Proyectos</h5>
+        <p>Web y aplicaciones</p>
+      </div>
+      <div class="educacion">
+        <i class="fas fa-graduation-cap"></i>
+        <h5>Educación</h5>
+        <p>Full Stack Developer</p>
+      </div>
+
+      <div class="derecha">
+        <h3 class="skills">Mis habilidades</h3>
+        <div class="grid text-center">
+          @for (skill of skills; track $index) {
+            <p class="habilidades">{{skill.name}}</p>
+          }
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="../../../assets/CV JAVIER SANCHO PE.pdf" download >
+        Descargar CV
+      </a>
+    </div>
   </div>
-    <div class="derecha">
-<h3 class="skills">Mis habilidades</h3>
-<div class="grid text-center">
-    @for (skill of skills; track $index) {
-        <p class="habilidades">{{skill.name}}</p>
-    }
-</div>
-</div>
 </div>

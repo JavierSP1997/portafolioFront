@@ -9,4 +9,11 @@ import { ProyectosComponent } from "../proyectos/proyectos.component";
 	templateUrl: "./main.component.html",
 	styleUrls: ["./main.component.css"],
 })
-export class MainComponent {}
+export class MainComponent {
+	scrollToProjects(): void {
+		const element = document.getElementById("proyectos");
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	}
+}
