@@ -7,15 +7,15 @@
 
 	padding-bottom: 50px;
 }
-.contenedores {
-	gap: 50px;
-	p {
-		color: lightgray;
-	}
+
+p {
+	color: lightgray;
+}
+h2 {
+	color: rgb(113, 213, 243);
+	font-size: 2rem;
 }
 h3 {
-	font-weight: bold;
-	margin-top: 60px;
 	text-align: center;
 	margin-bottom: 15px;
 }
@@ -48,5 +48,54 @@ h3 {
 	padding: 10px;
 	i {
 		color: rgb(113, 213, 243);
+	}
+}
+.izquierda {
+	margin-top: 30px;
+
+	padding: 10px;
+	border-radius: 10px;
+}
+.skills {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+.CV {
+	margin-top: 50px;
+}
+a {
+	background-color: #062038;
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(113, 213, 243);
+	border-radius: 10px;
+	color: #062038;
+	border: 1px solid none;
+	transition: 0.5s;
+}
+a:hover {
+	background-color: #062038;
+	border: 1px solid white;
+	color: white;
+	transition: 0.5s;
+}
+@media (min-width: 1024px) {
+	.contenedores {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		gap: 50px;
+	}
+	.skills {
+		margin-top: 50px;
+	}
+	.grid {
+		margin-top: 20px;
+		padding-left: 20%;
+		padding-right: 20%;
+		margin-bottom: 60px;
+	}
+	.textoPrincipal {
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
