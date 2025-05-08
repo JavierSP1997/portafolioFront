@@ -1,5 +1,13 @@
-h2 {
-	margin-top: 50px;
+section {
+	background-color: #062038;
+}
+h2,
+h4 {
+	padding-top: 50px;
+	color: white;
+}
+p {
+	color: darkgray;
 }
 
 img {

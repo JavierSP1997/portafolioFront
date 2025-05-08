@@ -1,11 +1,26 @@
-<section id="proyectos">
+<section id="proyectos ">
+    <div class="container">
 <h2 class="text-center">Mis projectos</h2>
+<p class="text-center">Una seleccion de mis trabajos destacados y soluciones que he desarrollado</p>
 @for (project of projects; track $index) {
-    <h4>{{project.title}}</h4>
+    <div class="images">
+        <h4>{{project.title}}</h4>
     @if (project.title === "Hamburgueseria Rovers") {
-        <img src="" alt="">
+        <img src="../../../assets/images/desktop.png" alt="">
     }
-    
+    @if (project.title === "Blog de Viajes") {
+        <img src="../../../assets/images/blogviajes.png" alt="">
+    }
+    @if (project.title === "Juego Consola") {
+        <img src="../../../assets/images/juego consola.png" alt="">
+    }
+    @if (project.title === "Viajeros Unidos") {
+        <img src="../../../assets/images/Viajeros_Unidos.png" alt="">
+    }
+    @if (project.title === "Portfolio Personal") {
+        <img src="../../../assets/images/portfolio.png" alt="">
+    }
     <p>{{project.description}}</p>
-}
+</div>
+}</div>
 </section>

@@ -73,6 +73,7 @@ button:hover {
 	transform: scale(1.2);
 	transition: 0.5s;
 }
+
 @media (max-width: 1260px) {
 	.social-links {
 		display: none;

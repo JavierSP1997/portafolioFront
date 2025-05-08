@@ -7,10 +7,12 @@
 	padding-left: 12%;
 	padding-right: 12%;
 	padding-bottom: 50px;
-	min-height: 600px;
 }
 .contenedores {
 	gap: 50px;
+	p {
+		color: lightgray;
+	}
 }
 h3 {
 	font-weight: bold;
