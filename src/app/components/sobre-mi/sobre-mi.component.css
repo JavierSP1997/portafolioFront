@@ -1,7 +1,39 @@
-.skills {
+.container {
+	margin-top: 50px;
+}
+.contenedores {
+	gap: 50px;
+}
+h3 {
 	margin-top: 60px;
+	text-align: center;
+	margin-bottom: 15px;
 }
 .grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	p {
+		margin-right: 20px;
+		background-color: #ede9e9;
+		padding: 8px 12px;
+		border-radius: 8px;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		cursor: pointer;
+	}
+
+	p:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+}
+
+@media (min-width: 768px) {
+	.contenedores {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	h3 {
+		margin-top: 25px;
+	}
 }

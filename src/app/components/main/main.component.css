@@ -18,14 +18,14 @@
 }
 
 .text h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 
 p {
 	margin-top: 20px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 button {
@@ -66,7 +66,7 @@ button:hover {
 	transform: scale(1.2);
 	transition: 0.5s;
 }
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
 	.social-links {
 		display: none;
 	}
