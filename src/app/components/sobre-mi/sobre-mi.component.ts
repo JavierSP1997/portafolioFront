@@ -11,9 +11,14 @@ import type { Skill } from "../../interfaces/skills.interface";
 export class SobreMiComponent {
 	skillsService = inject(SkillsService);
 	skills: Skill[] = [];
+	isLoading = true
 
 	async ngOnInit() {
+		try{
 		this.skills = await this.skillsService.obtenerSkills();
-		console.log(this.skills);
-	}
-}
+	} catch (error) {
+			console.error("Error al cargar las habilidades:", error);
+		} finally {
+			this.isLoading = false;
+		}
+}}

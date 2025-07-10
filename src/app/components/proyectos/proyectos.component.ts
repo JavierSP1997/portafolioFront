@@ -12,8 +12,15 @@ export class ProyectosComponent {
 	projectsService = inject(ProjectsService);
 
 	projects: Project[] = [];
+	isLoading = true;
 
 	async ngOnInit() {
-		this.projects = await this.projectsService.obtenerProyectos();
+		try {
+			this.projects = await this.projectsService.obtenerProyectos();
+		} catch (error) {
+			console.error("Error al cargar los proyectos:", error);
+		} finally {
+			this.isLoading = false;
+		}
 	}
 }

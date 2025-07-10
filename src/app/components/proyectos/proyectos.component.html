@@ -2,7 +2,9 @@
     <div class="container">
       <h2 class="text-center">Mis proyectos</h2>
       <p class="text-center">Una selección de mis trabajos destacados y soluciones que he desarrollado</p>
-  
+      @if(isLoading){
+        <div><p class="mb-0 pb-4 cargando">Cargando proyectos...</p></div>
+      }@else if( projects.length > 0){
       <div class="grid-proyectos">
         @for (project of projects; track $index) {
           <figure class="card-proyecto">
@@ -31,7 +33,9 @@
             <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>
         </figure>
         }
-      </div>
+      </div>}@else {
+        <div><p class="mb-0 pb-4 cargando">Conectando con la base de datos, espere por favor.</p></div>
+      }
     </div>
   </section>
   

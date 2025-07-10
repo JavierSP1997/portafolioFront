@@ -37,15 +37,20 @@
     </div>
   </div>
         <h3 class="skills">Mis habilidades</h3>
+        @if (isLoading) {
+          <div class="cargando m-0"><p>Cargando habilidades...</p></div>
+        }@else if (skills.length>0) {
         <div class="grid text-center">
           @for (skill of skills; track $index) {
             <p class="habilidades">{{skill.name}}</p>
           }
-        </div>
+        </div>}@else {
+          <div class="cargando"><p>Obteniendo habilidades de la base de datos.</p></div>
+        }
       
     </div>
     <div class="CV text-center mt-5 container">
-      <a href="../../../assets/CV JAVIER SANCHO PE.pdf" download >
+      <a href="../../../assets/CV_JAVIER SANCHO PE.pdf" download >
         Descargar CV
       </a>
     </div>
