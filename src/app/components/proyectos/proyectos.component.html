@@ -6,7 +6,9 @@
       <div class="grid-proyectos">
         @for (project of projects; track $index) {
           <figure class="card-proyecto">
-            
+             @if (project.title === 'Vaettir') {
+              <img src="../../../assets/images/heroVaettir.png" alt="Vaettir" />
+            }
             @if (project.title === 'Hamburguesería Rovers') {
               <img src="../../../assets/images/desktop.png" alt="Hamburguesería Rovers" />
             }
