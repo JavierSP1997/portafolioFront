@@ -37,8 +37,8 @@
         </div>
         @if (project.title === 'Vaettir') {
         <a href="https://vaettircarinena.com" target="_blank">Página web</a>
-        }
-        <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>
+        }@else {
+        <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>}
       </figure>
       }
     </div>}@else {
