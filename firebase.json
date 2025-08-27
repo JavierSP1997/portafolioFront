@@ -1,11 +1,16 @@
 {
 	"hosting": {
 		"public": "dist/portafolio-front/browser",
-		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-		"rewrites": [
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"redirects": [
 			{
 				"source": "**",
-				"destination": "/index.html"
+				"destination": "https://portfoliojaviersancho.netlify.app",
+				"type": 301
 			}
 		]
 	}

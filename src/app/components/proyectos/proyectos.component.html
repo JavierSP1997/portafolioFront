@@ -1,41 +1,55 @@
 <section id="proyectos">
-    <div class="container">
-      <h2 class="text-center">Mis proyectos</h2>
-      <p class="text-center">Una selección de mis trabajos destacados y soluciones que he desarrollado</p>
-      @if(isLoading){
-        <div><p class="mb-0 pb-4 cargando">Cargando proyectos...</p></div>
-      }@else if( projects.length > 0){
-      <div class="grid-proyectos">
-        @for (project of projects; track $index) {
-          <figure class="card-proyecto">
-             @if (project.title === 'Vaettir') {
-              <img src="../../../assets/images/heroVaettir.png" alt="Vaettir" />
-            }
-            @if (project.title === 'Hamburguesería Rovers') {
-              <img src="../../../assets/images/desktop.png" alt="Hamburguesería Rovers" />
-            }
-            @if (project.title === 'Blog de Viajes') {
-              <img src="../../../assets/images/blogviajes.png" alt="Blog de Viajes" />
-            }
-            @if (project.title === 'Juego Consola') {
-              <img src="../../../assets/images/juego consola.png" alt="Juego Consola" />
-            }
-            @if (project.title === 'Viajeros Unidos') {
-              <img src="../../../assets/images/Viajeros_Unidos.png" alt="Viajeros Unidos" />
-            }
-            @if (project.title === 'Portfolio Personal') {
-              <img src="../../../assets/images/portfolio.png" alt="Portfolio Personal" />
-            }
-            <figcaption class="titulo"><h4>{{ project.title }}</h4><p>{{ project.description }}</p></figcaption>
-            <div class="boton-contenedor">
-              
-            </div>
-            <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>
-        </figure>
-        }
-      </div>}@else {
-        <div><p class="mb-0 pb-4 cargando">Conectando con la base de datos, espere por favor.</p></div>
-      }
+  <div class="container">
+    <h2 class="text-center">Mis proyectos</h2>
+    <p class="text-center">Una selección de mis trabajos destacados y soluciones que he desarrollado</p>
+    @if(isLoading){
+    <div>
+      <p class="mb-0 pb-4 cargando">Cargando proyectos...</p>
     </div>
-  </section>
-  
+    }@else if( projects.length > 0){
+    <div class="grid-proyectos">
+      @for (project of projects; track $index) {
+      <figure class="card-proyecto">
+        @if (project.title === 'Vaettir') {
+        <img src="../../../assets/images/heroVaettir.png" alt="Vaettir" />
+        }
+        @if (project.title === 'Hamburguesería Rovers') {
+        <img src="../../../assets/images/desktop.png" alt="Hamburguesería Rovers" />
+        }
+        @if (project.title === 'Blog de Viajes') {
+        <img src="../../../assets/images/blogviajes.png" alt="Blog de Viajes" />
+        }
+        @if (project.title === 'Juego Consola') {
+        <img src="../../../assets/images/juego consola.png" alt="Juego Consola" />
+        }
+        @if (project.title === 'Viajeros Unidos') {
+        <img src="../../../assets/images/Viajeros_Unidos.png" alt="Viajeros Unidos" />
+        }
+        @if (project.title === 'Portfolio Personal') {
+        <img src="../../../assets/images/portfolio.png" alt="Portfolio Personal" />
+        }
+        @if (project.title === "Vaettir") {
+        <figcaption class="titulo">
+          <h4>{{ project.title }}</h4>
+          <p>{{ project.description }}</p>
+        </figcaption>
+        <div class="boton-contenedor">
+        </div>
+        <a href="" target="_blank"><i class="fab fa-github"></i>Página web</a>
+        }@else {
+        <figcaption class="titulo">
+          <h4>{{ project.title }}</h4>
+          <p>{{ project.description }}</p>
+        </figcaption>
+        <div class="boton-contenedor">
+        </div>
+        <a href="{{ project.url }}" target="_blank"><i class="fab fa-github"></i>Github</a>}
+      </figure>
+      }
+    </div>}@else {
+    <div>
+      <p class="mb-0 pb-4 cargando">Conectando con la base de datos, espere por favor.</p>
+    </div>
+    }
+  </div>
+</section>
